@@ -24,19 +24,19 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        int X = (int) event.getX();
-        int Y = (int) event.getY();
+        int x = (int) event.getX();
+        int y = (int) event.getY();
 
         int eventAction = event.getAction();
         switch (eventAction) {
             case MotionEvent.ACTION_DOWN:
-                textView1.setText("ACTION_DOWN = " + "X: " + X + " Y: " + Y);
+                textView1.setText("ACTION_DOWN = " + "X: " + x + " Y: " + y);
                 break;
             case MotionEvent.ACTION_MOVE:
-                textView1.setText("ACTION_MOVE = " + "X: " + X + " Y: " + Y);
+                textView1.setText("ACTION_MOVE = " + "X: " + x + " Y: " + y);
                 break;
             case MotionEvent.ACTION_UP:
-                textView1.setText("ACTION_UP = " + "X: " + X + " Y: " + Y);
+                textView1.setText("ACTION_UP = " + "X: " + x + " Y: " + y);
                 break;
         }
         return true;
